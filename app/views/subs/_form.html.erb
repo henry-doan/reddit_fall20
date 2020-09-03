@@ -1,1 +1,6 @@
-<p>test</p>
+<%= form_for @sub do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true %>
+
+  <%= f.submit %>
+<% end %>
